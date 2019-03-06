@@ -52,3 +52,5 @@ rtl8812au-$(CONFIG_MP_INCLUDED)+= core/rtw_bt_mp.o
 endif
 
 obj-$(CONFIG_RTL8812AU) := rtl8812au.o
+
+ccflags-y += -Idrivers/net/wireless/rtl8812au/include
