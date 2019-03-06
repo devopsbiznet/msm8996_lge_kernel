@@ -98,8 +98,8 @@ THREADS=$(grep -c "processor" /proc/cpuinfo)
 BDATE=$(LC_ALL='en_US.utf8' date '+%b %d %Y')
 
 # directory containing cross-compiler
-#GCC_COMP=$HOME/toolchain/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-GCC_COMP=$HOME/toolchain/gcc-arm-8.2-2019.01-x86_64-aarch64-linux-gnu/bin/aarch64-linux-gnu-
+GCC_COMP=$HOME/toolchain/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+#GCC_COMP=$HOME/toolchain/gcc-arm-8.2-2019.01-x86_64-aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 # compiler version
 GCC_VER="$(${GCC_COMP}gcc --version | head -n 1 | cut -f1 -d')' | \

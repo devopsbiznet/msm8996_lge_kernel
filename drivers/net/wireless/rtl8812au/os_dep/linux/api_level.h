@@ -5,8 +5,8 @@
 * Some older kernels may have backported cfg80211/nl80211 API.
 */
 
-#ifndef CFG80211_API_LEVEL
-#define CFG80211_API_LEVEL LINUX_VERSION_CODE
-#endif /* CFG80211_API_LEVEL */
+
+#define CFG80211_API_LEVEL KERNEL_VERSION(4, 0, 0)
+
 #endif
 
